@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flip Card with Two Images</title>
+  <link rel="stylesheet" href="mediaqueries.css" />
+  <link rel="stylesheet" href="style.css" />
+  
+
+</head>
+<body>
+<section class="heads">
+  <div id="title">
+  </div>
+   <div class="nav-links-container">
+          <div class="logo1"><a href="index.html">Regal Nova Games</a></div>
+          <ul class="nav-links">
+            <li><a href="index.html">Shop</a></li>
+            <li><a href="#experience">Lore</a></li>
+            <li><a href="#projects">Explore</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+</section>
+
+<section class="card-trivia">
+  <div class="left-box">
+    <img src="card/back.jpg" alt="Regal Nova Card Back">
+  </div>
+
+  <div class="right-box">
+    <h2>DAILY CARD TRIVIA</h2>
+    <div class="content-box">
+      <p>THIS IS THE STORY OF THE CAR</p>
+      <p>D AND IT LORE</p>
+    </div>
+  </div>
+</section>
+<span></span>
+<span></span>
+
+<section class="card-sec">
+
+
+<div class="card-container">
+  <div class="snow-container"></div>
+
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <img src="card/back.jpg" alt="back Image">
+      </div>
+      <div class="card-face card-back">
+        <img src="card/front.jpg" alt="Back Image">
+      </div>
+    </div>
+  </div>
+
+  <div class="card" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <img src="card/card1.jpg" alt="Second Front Image">
+      </div>
+      <div class="card-face card-back">
+        <img src="card/back.jpg" alt="Second Back Image">
+      </div>
+    </div>
+  </div>
+
+  <div class="card" onclick="flipCard(this)">
+      <div class="card-inner">
+        <div class="card-face card-front">
+          <img src="card/card3.jpg" alt="Front of Card 3">
+        </div>
+        <div class="card-face card-back">
+          <img src="card/back.jpg" alt="Back of Card 3">
+        </div>
+      </div>
+    </div>
+</div>
+
+
+
+
+   </section>
+
+<script>
+  function flipCard(card) {
+    const inner = card.querySelector('.card-inner');
+    inner.classList.toggle('flipped');
+  }
+</script>
+<script src="script.js"></script>
+<footer>
+  <p>Copyright &#169; 2025 Regal Nova GAMES. All Rights Reserved.</p>
+</footer>
+
+
+</body>
+
+
+</html>
+
+
+
+
